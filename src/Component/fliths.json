@@ -1,0 +1,121 @@
+[
+  {
+    "flightNumber": "AI101",
+    "from": "6978995dba7d676e70cefe15",
+    "to": "6978995dba7d676e70cefe16",
+    "aircraft": "697898d8ba7d676e70cefe09",
+    "departureTime": "2026-02-01T04:30:00.000Z",
+    "arrivalTime": "2026-02-01T06:40:00.000Z",
+    "price": {
+      "economy": 5200,
+      "business": 12500
+    },
+    "seatsAvailable": {
+      "economy": 168,
+      "business": 12
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI202",
+    "from": "6978995dba7d676e70cefe16",
+    "to": "6978995dba7d676e70cefe17",
+    "aircraft": "697898d8ba7d676e70cefe09",
+    "departureTime": "2026-02-01T07:15:00.000Z",
+    "arrivalTime": "2026-02-01T09:00:00.000Z",
+    "price": {
+      "economy": 4800,
+      "business": 11000
+    },
+    "seatsAvailable": {
+      "economy": 168,
+      "business": 12
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI303",
+    "from": "6978995dba7d676e70cefe15",
+    "to": "6978995dba7d676e70cefe1a",
+    "aircraft": "697898d8ba7d676e70cefe0a",
+    "departureTime": "2026-02-01T09:00:00.000Z",
+    "arrivalTime": "2026-02-01T11:10:00.000Z",
+    "price": {
+      "economy": 5600,
+      "business": 13500
+    },
+    "seatsAvailable": {
+      "economy": 192,
+      "business": 20
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI404",
+    "from": "6978995dba7d676e70cefe15",
+    "to": "6978995dba7d676e70cefe19",
+    "aircraft": "697898d8ba7d676e70cefe09",
+    "departureTime": "2026-02-01T13:00:00.000Z",
+    "arrivalTime": "2026-02-01T15:10:00.000Z",
+    "price": {
+      "economy": 6100,
+      "business": 14000
+    },
+    "seatsAvailable": {
+      "economy": 168,
+      "business": 12
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI505",
+    "from": "6978995dba7d676e70cefe16",
+    "to": "6978995dba7d676e70cefe20",
+    "aircraft": "697898d8ba7d676e70cefe0c",
+    "departureTime": "2026-02-01T15:30:00.000Z",
+    "arrivalTime": "2026-02-01T16:50:00.000Z",
+    "price": {
+      "economy": 4300,
+      "business": 9800
+    },
+    "seatsAvailable": {
+      "economy": 162,
+      "business": 12
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI606",
+    "from": "6978995dba7d676e70cefe17",
+    "to": "6978995dba7d676e70cefe18",
+    "aircraft": "697898d8ba7d676e70cefe11",
+    "departureTime": "2026-02-01T06:00:00.000Z",
+    "arrivalTime": "2026-02-01T07:10:00.000Z",
+    "price": {
+      "economy": 3200,
+      "business": 0
+    },
+    "seatsAvailable": {
+      "economy": 68,
+      "business": 0
+    },
+    "isActive": true
+  },
+  {
+    "flightNumber": "AI707",
+    "from": "6978995dba7d676e70cefe15",
+    "to": "6978995dba7d676e70cefe1d",
+    "aircraft": "697898d8ba7d676e70cefe0e",
+    "departureTime": "2026-02-01T21:00:00.000Z",
+    "arrivalTime": "2026-02-02T00:10:00.000Z",
+    "price": {
+      "economy": 7800,
+      "business": 22000
+    },
+    "seatsAvailable": {
+      "economy": 232,
+      "business": 18
+    },
+    "isActive": true
+  }
+]

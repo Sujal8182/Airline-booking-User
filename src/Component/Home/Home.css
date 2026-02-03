@@ -1,0 +1,423 @@
+:root {
+  --navy: #021b3a;
+  --navy-dark: #01162e;
+  --blue: #0071eb;
+  --white: #ffffff;
+  --muted: #cbd5e1;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+  scrollbar-width: none;
+}
+
+.home {
+  min-height: 60vh;
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  color: var(--white);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 15vw;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* hero-name */
+.hero-name {
+  padding: 60px 15vw;
+}
+
+.hero-name h1 {
+  font-size: 2.6rem;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+/* SEARCH WRAPPER */
+.search-wrapper {
+  /* background: linear-gradient(180deg, #0b2540, #061a30); */
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TRIP TYPE */
+.trip-type {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.trip-type button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.trip-type .active {
+  background: white;
+  color: #000;
+  font-weight: 600;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr 1fr 1fr auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+/* INPUT BOX */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 14px;
+  border-right: 1px solid #ddd;
+  gap : 2px
+}
+
+.input-box:last-of-type {
+  border-right: none;
+}
+
+.input-box label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.input-box input::placeholder {
+  color: #777;
+}
+
+/* SELECT OVERRIDE (react-select) */
+.input-box .css-13cymwt-control {
+  border: none;
+  min-height: auto;
+  box-shadow: none;
+}
+.input-box .flight-select {
+  line-height: 1.4;
+}
+
+/* SWAP */
+.swap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #0062e3;
+  cursor: pointer;
+  border-right: 1px solid #ddd;
+}
+
+/* SEARCH BUTTON */
+.search-btn {
+  background: #0062e3;
+  color: white;
+  border: none;
+  padding: 0 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  gap: 32px;
+  margin-top: 12px;
+  color: white;
+  font-size: 14px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.date-box, .date-box input {
+  cursor: pointer;
+}
+.date-box:open{
+  border: 2px solid #0062e3;
+}
+.date-popup {
+  position: absolute;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 10px;
+  width: 320px;
+  color: #000;
+  z-index: 120;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  right: 37%;
+  top: 54vh;
+}
+
+.date-popup h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.date-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.date-row div {
+  flex: 1;
+}
+
+.date-row label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.date-row input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.date-row input:focus {
+  outline: none;
+  border-color: #0062e3;
+}
+
+
+/* REACT-SELECT ROOT */
+.flight-select {
+  font-size: 14px;
+}
+
+/* CONTROL (input container) */
+.flight__control {
+  border: none !important;
+  box-shadow: none !important;
+  min-height: auto !important;
+  padding: 0 !important;
+  cursor: text;
+}
+
+/* VALUE CONTAINER */
+.flight__value-container {
+  padding: 0 !important;
+}
+
+/* INPUT TEXT */
+.flight__input-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #000;
+}
+
+/* PLACEHOLDER */
+.flight__placeholder {
+  color: #777;
+  margin: 0;
+}
+
+/* SINGLE VALUE */
+.flight__single-value {
+  margin: 0;
+  color: #000;
+}
+
+/* DROPDOWN INDICATOR (arrow) */
+.flight__indicator {
+  padding: 0 4px;
+  color: #555;
+}
+
+/* REMOVE SEPARATOR */
+.flight__indicator-separator {
+  display: none;
+}
+
+/* MENU (dropdown) */
+.flight__menu {
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 50;
+}
+
+/* OPTION */
+.flight__option {
+  font-size: 14px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+/* OPTION STATES */
+.flight__option--is-focused {
+  background: #f0f6ff;
+}
+
+.flight__option--is-selected {
+  background: #0062e3;
+  color: white;
+}
+.flight__menu-portal {
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+.passenger-box input {
+  cursor: pointer;
+}
+.passenger-popup {
+  position: absolute;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 10px;
+  width: 340px;
+  color: #000;
+  z-index: 100;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  right: 250px;
+}
+
+.passenger-popup h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.passenger-popup .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls button {
+  border: 1px solid #0062e3;
+  background: white;
+  color: #0062e3;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.cabin-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.cabin-select button {
+  background: #f0f6ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.active-cabin {
+  background: #0062e3 !important;
+  color: white !important;
+}
+
+.done-btn {
+  width: 100%;
+  background: #0062e3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .search-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .swap {
+    display: none;
+  }
+
+  .input-box {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+

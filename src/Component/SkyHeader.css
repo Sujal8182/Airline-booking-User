@@ -1,0 +1,163 @@
+:root {
+  --navy: #021b3a;
+  --navy-dark: #01162e;
+  --blue: #0071eb;
+  --white: #ffffff;
+  --muted: #cbd5e1;
+}
+
+/* HEADER WRAPPER */
+.sky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT */
+.sky-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sky-logo {
+  font-size: 22px;
+  color: var(--white);
+}
+
+.sky-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* CENTER SEARCH SUMMARY */
+.sky-search-pill {
+  background: var(--navy-dark);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 480px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* RIGHT */
+.sky-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sky-link {
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.sky-link:hover {
+  color: var(--white);
+}
+
+/* LOGIN BUTTON */
+.sky-login-btn {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  padding: 7px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sky-login-btn:hover {
+  background: #005fcc;
+}
+
+/* USER DROPDOWN */
+.sky-user-wrapper {
+  position: relative;
+}
+
+.sky-user-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DROPDOWN */
+.sky-user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  background: var(--navy-dark);
+  width: 230px;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+  padding: 14px;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* USER INFO */
+.sky-user-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.sky-user-info strong {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.sky-user-info span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* LOGOUT BUTTON */
+.sky-logout-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sky-logout-btn:hover {
+  background: #ef4444;
+  color: var(--white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sky-search-pill {
+    display: none;
+  }
+}

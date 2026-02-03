@@ -1,0 +1,173 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --airline-blue: #0b1d3a;
+  --sky-blue: #2563eb;
+  --deep-blue: #102a56;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --glass: rgba(255, 255, 255, 0.85);
+}
+
+/* ===== WRAPPER ===== */
+.auth-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, #1e3a8a 0%, transparent 45%),
+    linear-gradient(135deg, var(--airline-blue), var(--deep-blue));
+  animation: skyFade 1.2s ease forwards;
+}
+
+/* ===== CARD ===== */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  animation: glideIn 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===== TITLES ===== */
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 650;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.auth-subtitle {
+  margin-top: 6px;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* ===== INPUTS ===== */
+.input-group {
+  margin-bottom: 22px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.9);
+  transition:
+    border 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--sky-blue);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+  transform: translateY(-1px);
+}
+
+/* ===== BUTTON ===== */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, var(--sky-blue), #1d4ed8);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-position 0.5s ease;
+
+  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.45);
+}
+
+.auth-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 26px 45px rgba(37, 99, 235, 0.55);
+}
+
+.auth-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 12px 20px rgba(37, 99, 235, 0.4);
+}
+.color {
+  font : var(--sky-blue)
+}
+
+/* ===== FOOTER ===== */
+.auth-footer {
+  display: block;
+  margin-top: 24px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .auth-title {
+    font-size: 1.55rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .auth-card {
+    max-width: 460px;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes glideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes skyFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

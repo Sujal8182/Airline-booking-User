@@ -1,0 +1,134 @@
+/* PAGE BACKGROUND */
+body {
+  background: #f5f7fa;
+}
+
+/* WRAPPER */
+.booking-wrapper {
+  max-width: 1150px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* HEADER */
+.booking-header.sky {
+  background: linear-gradient(90deg, #03254c, #054fa3);
+  color: white;
+  padding: 20px 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.booking-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.booking-header p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* LAYOUT */
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* LEFT PANEL */
+.booking-left {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.booking-left h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* PASSENGER CARD */
+.passenger-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #fafafa;
+}
+
+.passenger-card h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #03254c;
+}
+
+.passenger-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.passenger-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* RIGHT PANEL */
+.booking-right {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 24px;
+}
+
+.booking-right h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* PRICE ROW */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.price-row strong {
+  font-size: 18px;
+}
+
+/* CTA */
+.confirm-btn {
+  width: 100%;
+  background: #03254c;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.confirm-btn:hover {
+  background: #021b36;
+}
+
+/* LOADING */
+.loading {
+  text-align: center;
+  padding: 80px;
+  font-size: 18px;
+}

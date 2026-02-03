@@ -1,0 +1,161 @@
+/* Page wrapper */
+.my-bookings-page {
+  min-height: 100vh;
+  background: linear-gradient(#eaf4ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero */
+.bookings-hero {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.bookings-hero h2 {
+  font-size: 28px;
+  color: #03254c;
+}
+
+.bookings-hero p {
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Content */
+.my-bookings {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Card */
+.booking-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Route */
+.route {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #03254c;
+  margin-bottom: 16px;
+}
+
+.city {
+  letter-spacing: 1px;
+}
+
+.arrow {
+  color: #888;
+}
+
+/* Meta */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.meta small {
+  font-size: 12px;
+  color: #888;
+}
+
+.meta p {
+  margin: 4px 0 0;
+  font-weight: 500;
+}
+
+/* Footer row */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Status badge */
+.status {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.confirmed {
+  background: #e6f7ed;
+  color: #1c7c44;
+}
+
+.status.cancelled {
+  background: #fdeaea;
+  color: #b02a37;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.empty h3 {
+  margin-bottom: 8px;
+}
+
+.empty button {
+  margin-top: 16px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  background: #03254c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+  color: #666;
+  background: #f5f9ff;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  margin-top: 80px;
+  color: #555;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .route {
+    font-size: 18px;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
