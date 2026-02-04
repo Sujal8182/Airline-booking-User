@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { act } from "react";
-const baseURL = "http://localhost:5050";
+const baseURL = "https://airline-booking-backend-58y6.onrender.com";
 
 export const login = createAsyncThunk(
   "user/login",

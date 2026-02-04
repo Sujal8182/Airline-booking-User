@@ -57,7 +57,7 @@ const FlightResults = () => {
     const fetchFlights = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5050/airline/users/searchflights",
+          "https://airline-booking-backend-58y6.onrender.com/airline/users/searchflights",
           { params },
         );
         setFlights(res.data.flights || []);

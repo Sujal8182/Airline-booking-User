@@ -14,7 +14,7 @@ const MyBookings = () => {
     const fetchBookings = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5050/airline/users/my-bookings",
+          "https://airline-booking-backend-58y6.onrender.com/airline/users/my-bookings",
           { withCredentials: true }
         );
         setBooking(res.data.bookings);

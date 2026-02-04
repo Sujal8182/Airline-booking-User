@@ -43,7 +43,7 @@ const Home = () => {
     if (inputvalue.length < 2) return [];
 
     const res = await fetch(
-      `http://localhost:5050/airline/users/search?city=${inputvalue}`,
+      `https://airline-booking-backend-58y6.onrender.com/airline/users/search?city=${inputvalue}`,
     );
 
     const data = await res.json();

@@ -40,7 +40,7 @@ const Booking = () => {
     const fetchFlight = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5050/airline/users/flights/${id}`,
+          `https://airline-booking-backend-58y6.onrender.com/airline/users/flights/${id}`,
         );
         setFlight(res.data);
       } catch (err) {
@@ -72,7 +72,7 @@ const Booking = () => {
 
     try {
       const orderRes = await axios.post(
-        "http://localhost:5050/airline/users/create-order",
+        "https://airline-booking-backend-58y6.onrender.com/airline/users/create-order",
         { amount: totalPrice },
       );
       const order = orderRes.data;
@@ -86,7 +86,7 @@ const Booking = () => {
         order_id: order.id,
         handler: async function (response) {
           const verifyRes = await axios.post(
-            "http://localhost:5050/airline/users/verify-payment",
+            "https://airline-booking-backend-58y6.onrender.com/airline/users/verify-payment",
             response,
           );
 
@@ -95,7 +95,7 @@ const Booking = () => {
             return;
           } else {
             await axios.post(
-              "http://localhost:5050/airline/users/book",
+              "https://airline-booking-backend-58y6.onrender.com/airline/users/book",
               {
                 flightId: flight._id,
                 from : query.from,
