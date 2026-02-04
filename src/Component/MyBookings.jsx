@@ -19,8 +19,7 @@ const MyBookings = () => {
         );
         setBooking(res.data.bookings);
       } catch (error) {
-        toast.error("Please login to view your bookings");
-        navigate("/login");
+        toast.error(error);
       } finally {
         setLoading(false);
       }
