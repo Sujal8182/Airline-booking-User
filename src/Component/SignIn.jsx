@@ -13,7 +13,7 @@ const SignIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const { error, message , isAuth} = useSelector((state) => state.user)
+  const { error, message , isAuth , loading} = useSelector((state) => state.user)
 
   const loginHandler = (e) => {
     e.preventDefault()
@@ -58,8 +58,8 @@ const SignIn = () => {
           />
         </div>
 
-        <button className="auth-btn" type="submit" >
-          Sign In
+        <button className="auth-btn" type="submit" disabled={loading}>
+          {loading ? "Signing in…" : "Sign in"}
         </button>
 
         <span className="auth-footer">
